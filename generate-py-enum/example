@@ -1,0 +1,10 @@
+cat /usr/include/a.out.h | awk -f generate-py-enum.awk -v name='machine_type'
+from enum import Enum
+class machine_type(Enum):
+    M_OLDSUN2 = 0
+    M_68010 = 1
+    M_68020 = 2
+    M_SPARC = 3
+    M_386 = 100
+    M_MIPS1 = 151
+    M_MIPS2 = 152
