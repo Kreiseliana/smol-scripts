@@ -7,9 +7,9 @@ function gls
         set -f auth --author=$_flag_a
     end
     if set -q _flag_r
-	git show --stat $auth $_flag_r | awk -f $path/line-sum.awk
+        git show --stat $auth $_flag_r | awk -f $path/line-sum.awk
     else
-	git log --shortstat $auth | awk -f $path/line-sum.awk
+        git log --shortstat $auth | awk -f $path/line-sum.awk
     end
 end
 
