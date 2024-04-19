@@ -3,10 +3,8 @@ function rename-fn
     functions -e $argv[1]
 end
 
-set -g ashr_smol_home $(pwd)
-
-source git-grep-diff/grd.fish
+source $ashr_smol_home/git-grep-diff/grd.fish
 # rename-fn grd grd_newname
-source git-line-sum/gls.fish
+source $ashr_smol_home/git-line-sum/gls.fish
 # rename-fn gls gls_newname
 
